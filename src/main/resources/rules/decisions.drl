@@ -1,0 +1,18 @@
+package rules;
+
+import eguce3g.bns.reglemetier.model.Marchandise;
+
+rule "Règle 1"
+when
+    $d : Marchandise(montant >= 1000000)
+then
+    $d.setResultat("avi");
+end
+
+rule "Règle 2"
+when
+    $d : Marchandise(montant >= 2000000)
+then
+    $d.setResultat("avi");
+end
+
